@@ -10,7 +10,7 @@ with open("article.txt", "r") as file:
 prompt = """
 Generate HTML code for the article with the following guidelines:
 - Use appropriate HTML tags to structure the content.
-- Indicate places where images should be inserted using the <img> tag with the attribute src="image_placeholder.jpg". Add an alt attribute to each image with a detailed prompt that we can use to generate the image.
+- Indicate places where images should be inserted using the <img> tag with the attribute src="image_placeholder.jpg". Add an alt attribute to each image with a detailed prompt that we can use to generate the image, Img and caption should be in one <figure> tag.
 - Place captions under images using the appropriate HTML tag.
 - No CSS or JavaScript. The returned code should only contain content to be inserted between <body> and </body> tags. Do not include <html>, <head>, or <body> tags.
 """
